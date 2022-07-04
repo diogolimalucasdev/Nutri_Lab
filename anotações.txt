@@ -1,0 +1,58 @@
+CRIANDO UM PROJETO 
+
+python -m venv venv - CRIAR AMBIENTE
+venv/Scripts/activate - ATIVAR O AMBIENTE
+pip install django - Instalar o Django
+pip install pillow - Biblioteca para imagens
+django-admin startproject nutri_lab . - Startar o projeto (o ponto serve para deixar o projeto mais limpo) - Nome do projeto é nutri_lab
+python manage.py runserver - rodar o servidor (aplicação)
+python manage.py startapp autenticacao - Criar um app
+python manage.py createsuperuser - CRIAR SUPER ADM
+
+python manage.py makemigrations - conexao com banco de dados e criar migrations
+python manage.py migrate - agora sim passo todos os parametros
+
+
+
+-----------------------------------------------
+
+
+django trabalaha com a arquitetura MVT(model, view, template)
+
+model : conexão com banco de dados
+template: interface entre o usuario e a aplicação, HTML, CSS e javaScript
+view: logica do projeto
+
+-------------------------------------------------------
+
+Criando um template
+
+dentro do meu app autenticacao eu crio uma pasta chamada templates, onde eu irei colocar o html
+
+-------------------------------------
+
+Adicionar meu app autenticacao
+
+vou ate settings.py e procuro o "INSTALLED_APPS"
+e coloco o nome da minha pasta, no caso 'autenticacao'
+
+------------------------------------------------
+
+Adiconando a base html
+
+Vou ate a raiz do projeto e crio uma pasta chamada templates e crio o meu arquivo html
+
+PARA QUE SERVE ESSE ARQUIVOS?
+como usado em react onde eu crio partes da pagina como header, footer... separados para depois adicionar nas telas
+que necessitem, eu faço o meso em django 
+
+
+---------------------------------------------------
+Extensao django para vscode para ajudar com cores e comandos
+
+------------------------------------------
+
+Adicionando meu template ao projeto
+
+vou ate settings.py "templates" e vou ate "Dirs" e coloco o comando dentro da lista
+ [ "os.path.joi(BASE_DIR, 'templates')"] - BASE_DIR é o que referencia a raiz do projeto
