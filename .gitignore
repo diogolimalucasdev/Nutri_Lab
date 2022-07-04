@@ -152,4 +152,4 @@ dmypy.json
 cython_debug/
 
 #migrations
-autenticacao/migrations
+NutriLab/autenticacao/migrations
