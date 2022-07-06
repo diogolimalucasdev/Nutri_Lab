@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'plataforma/css/css.css' %}">
+{% endblock %}
+
+{% block 'body' %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            Lateral
+        </div>
+        <div class="col-md-8">
+            {% block 'plataforma' %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+{% endblock%}
