@@ -12,6 +12,12 @@ python manage.py createsuperuser - CRIAR SUPER ADM
 python manage.py makemigrations - conexao com banco de dados e criar migrations
 python manage.py migrate - agora sim passo todos os parametros
 
+.\venv\Scripts\activate - ativar ambiente virtual
+
+ python manage.py startapp plataforma - criando novo app
+
+
+
 
 
 -----------------------------------------------
