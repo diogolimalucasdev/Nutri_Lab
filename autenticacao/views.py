@@ -58,8 +58,8 @@ def cadastro(request):  # sempre que o usuario acessar essa url ele manda uma re
 # return HttpResponse("Voce esta na pagina de cadastro") # e eu devolvo uma response
 
 
-def logar(request):
-    return render(request , 'logar.html')
+# def logar(request):
+#     return render(request , 'logar.html')
 
 
 def logar(request):
@@ -78,7 +78,7 @@ def logar(request):
             return redirect('/auth/logar')
         else:
             auth.login(request , usuario)
-            return redirect('/')
+            return redirect('/pacientes')
 
 
 def sair(request):
